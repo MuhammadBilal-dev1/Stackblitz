@@ -10,6 +10,16 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
+  {
+    ignores: [
+      "lib/generated/**",
+      "lib/generated/prisma/**",
+      "**/.prisma/**",
+      "**/runtime/wasm-compiler-edge.js",
+      "node_modules/**",
+      ".next/**",
+    ],
+  },
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 ];
 

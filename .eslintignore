@@ -1,0 +1,7 @@
+# Ignore Prisma generated outputs and other auto-generated runtime artifacts
+lib/generated/
+lib/generated/prisma/
+**/.prisma/
+**/runtime/wasm-compiler-edge.js
+node_modules/
+.next/
